@@ -1,0 +1,15 @@
+<div class="input-group quantity-align">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" type="button" (click)=DecreaseItem()> - </button>
+    </div>
+    <input type="text" 
+      class="form-control quantity-input" 
+      placeholder="" 
+      aria-label="" 
+      aria-describedby="basic-addon1"
+      value= {{this.quantity}}
+    />
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" type="button" (click)=IncrementItem()> + </button>
+    </div>
+</div>

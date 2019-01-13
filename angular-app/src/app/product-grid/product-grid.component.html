@@ -1,0 +1,22 @@
+<div class="product-card">
+  <div class="col-12 p-0">
+    <img src="https://via.placeholder.com/200x250" alt="Avatar" class="img-responsive" width="100%" height="100%" />
+  </div>
+  <div class="col-12 p-3">
+    <div class="row pc-content">
+      <div class="col-12">
+        <h4>{{product.name}}</h4>
+        <h6 class="text-uppercase">{{product.category}}</h6>
+      </div>
+    </div>
+    <div class="row pc-footer">
+      <div class="col-6">
+        <h4>{{product.price}} €</h4>
+      </div>
+      <div class="col-6">
+        <img [src]="product.fav ? heartRedImgPath : heartImgPath" alt="Add to favorites" class="heart" (click)="onSelectFav(product.id)" />
+        <img [src]="product.cart ? cartBlueImgPath : cartImgPath" alt="Add to cart" class="cart" (click)="onSelectCart(product.id)" />
+      </div>
+    </div>
+  </div>
+</div>

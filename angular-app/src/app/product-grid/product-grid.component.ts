@@ -14,12 +14,15 @@ export class ProductGridComponent implements OnInit {
   heartRedImgPath: string;
   cartImgPath: string;
   heartImgPath: string;
+  
 
   constructor(private cartService: CartService) {
     this.cartBlueImgPath = "assets/images/cart-blue.svg";
     this.heartRedImgPath = "assets/images/like-red.svg";
     this.cartImgPath = "assets/images/cart-black.svg";
     this.heartImgPath = "assets/images/like-black.svg";
+    // const source = require('assets/images/products/');
+    // let image = source(`./${this.product.img}`);
   }
 
   ngOnInit() {

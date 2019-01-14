@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PRODUCTS } from '../mock-products';
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  selector: 'app-cart-table',
+  templateUrl: './cart-table.component.html',
+  styleUrls: ['./cart-table.component.css']
 })
-export class TableComponent implements OnInit {
+export class CartTableComponent implements OnInit {
   products = [PRODUCTS];
   constructor() { }
 

@@ -14,7 +14,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SearchComponent } from './search/search.component';
 import { SortComponent } from './sort/sort.component';
 import { FilterComponent } from './filter/filter.component';
-import { TableComponent } from './table/table.component';
+import { CartTableComponent } from './cart-table/cart-table.component';
 import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
@@ -31,7 +31,7 @@ import { CounterComponent } from './counter/counter.component';
     SearchComponent,
     SortComponent,
     FilterComponent,
-    TableComponent,
+    CartTableComponent,
     CounterComponent
   ],
   imports: [

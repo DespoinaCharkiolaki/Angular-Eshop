@@ -1,3 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+h1, h2, h3, h4, h5{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa !important;
+}

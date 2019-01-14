@@ -7,7 +7,7 @@ import { PRODUCTS } from '../mock-products';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  products = PRODUCTS;
+  products = [PRODUCTS];
   constructor() { }
 
   ngOnInit() {

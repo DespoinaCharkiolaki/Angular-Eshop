@@ -1,0 +1,13 @@
+<div>
+  <div *ngIf="this.products.length>0" class="row m-0">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-0"
+         *ngFor="let product of products">
+      <app-product-grid [product]="product"></app-product-grid>
+    </div>
+  </div>
+  <div *ngIf="!this.products.length>0" class="row">
+    <div class="col-12">
+      <div class="alert alert-danger mt-3" role="alert">No results yet.</div>
+    </div>
+  </div>
+</div>

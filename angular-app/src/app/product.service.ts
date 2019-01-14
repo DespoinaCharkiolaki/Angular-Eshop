@@ -1,31 +1,28 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
-import { Observable, of } from 'rxjs';
-
-import { Product } from './product';
-import { PRODUCTS } from './mock-products';
-import { CartService } from './cart.service';
+import {Product} from './product';
+import {DBPRODUCTS} from './mock-products';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor(private cartService: CartService) { }
+  readonly products: Product[];
+
+  constructor() {
+    this.products = DBPRODUCTS.map(p => new Product(p, false, false));
+  }
 
   getProducts(): Product[] {
-    return PRODUCTS.map(p => new Product(
-      p, 
-      this.isProductInCart(p.id), 
-      false));
+    return this.products;
   }
 
-  isProductInCart(id: number): boolean {
-    var cartedProductsIdsArray = this.cartService.cart.map(cartedProduct => {
-      return (cartedProduct.id);
-    });
-    return cartedProductsIdsArray.includes(id);
-  }
+  getProductsAsMap(): Map<number, Product> {
+    let map = new Map<number, Product>();
+    this.products.map(p => map.set(p.id, p));
+    return map;
+}
 
   // getProducts(): Observable<Product[]> {
   //   return of(PRODUCTS);

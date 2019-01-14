@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../product';
-import { CartService } from '../cart.service';
+import {Component, Input, OnInit} from '@angular/core';
+import {Product} from '../product';
+import {CartService} from '../cart.service';
 
 @Component({
   selector: 'app-product-grid',
@@ -14,26 +14,23 @@ export class ProductGridComponent implements OnInit {
   heartRedImgPath: string;
   cartImgPath: string;
   heartImgPath: string;
-  
 
   constructor(private cartService: CartService) {
     this.cartBlueImgPath = "assets/images/cart-blue.svg";
     this.heartRedImgPath = "assets/images/like-red.svg";
     this.cartImgPath = "assets/images/cart-black.svg";
     this.heartImgPath = "assets/images/like-black.svg";
-    // const source = require('assets/images/products/');
-    // let image = source(`./${this.product.img}`);
   }
 
   ngOnInit() {
   }
 
-  onSelectFav(id: number) {
+  onSelectFav(product: Product) {
     this.product.fav = !this.product.fav;
   }
 
-  onSelectCart(id: number) {
+  onSelectCart(product: Product) {
     this.product.cart = !this.product.cart;
-    this.cartService.addToCart(this.product);
+    //this.cartService.addToCart(this.product);
   }
 }

@@ -14,8 +14,8 @@
         <h4>{{product.price}} €</h4>
       </div>
       <div class="col-6">
-        <img [src]="product.fav ? heartRedImgPath : heartImgPath" alt="Add to favorites" class="heart" (click)="onSelectFav(product.id)" />
-        <img [src]="product.cart ? cartBlueImgPath : cartImgPath" alt="Add to cart" class="cart" (click)="onSelectCart(product.id)" />
+        <img [src]="product.fav ? heartRedImgPath : heartImgPath" alt="Add to favorites" class="heart" (click)="onSelectFav(product)" />
+        <img [src]="product.cart ? cartBlueImgPath : cartImgPath" alt="Add to cart" class="cart" (click)="onSelectCart(product)" />
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import { DbProduct } from './dbProduct';
 
-export const PRODUCTS: DbProduct[] = [
+export const DBPRODUCTS: DbProduct[] = [
   {
     "id": 1,
     "name": "Leather Bag",

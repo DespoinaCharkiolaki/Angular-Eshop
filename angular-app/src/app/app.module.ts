@@ -16,6 +16,7 @@ import { SortComponent } from './sort/sort.component';
 import { FilterComponent } from './filter/filter.component';
 import { CartTableComponent } from './cart-table/cart-table.component';
 import { CounterComponent } from './counter/counter.component';
+import { FavoritesGridComponent } from './favorites-grid/favorites-grid.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CounterComponent } from './counter/counter.component';
     SortComponent,
     FilterComponent,
     CartTableComponent,
-    CounterComponent
+    CounterComponent,
+    FavoritesGridComponent
   ],
   imports: [
     BrowserModule,

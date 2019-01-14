@@ -4,8 +4,10 @@
         <div class="form-inline">
             <input type="text" 
                     class="form-control col-12"
-                    placeholder="Search"/>
-            <button class="btn btn-success col-12 mt-2">
+                    placeholder="Search"
+                    (change)=onInputChange($event)/>
+            <button class="btn btn-success col-12 mt-2" 
+                    (click)=onSearch()>
               Search
             </button>
         </div>

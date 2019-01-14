@@ -21,8 +21,6 @@ export class ProductGridComponent implements OnInit {
     this.heartRedImgPath = "assets/images/like-red.svg";
     this.cartImgPath = "assets/images/cart-black.svg";
     this.heartImgPath = "assets/images/like-black.svg";
-    // const source = require('assets/images/products/');
-    // let image = source(`./${this.product.img}`);
   }
 
   ngOnInit() {

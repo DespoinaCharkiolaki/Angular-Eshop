@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="col-12">
+    <h2 class="m-3">
+      Favorites
+    </h2>
+    <app-products-grid [products]="products" (updateFavorites)="favorite($event)"></app-products-grid>
+  </div>
+</div>

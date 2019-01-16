@@ -1,40 +1,38 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { ShopComponent } from './shop/shop.component';
-import { FavoritesComponent } from './favorites/favorites.component';
-import { CartComponent } from './cart/cart.component';
-import { ProductsComponent } from './products/products.component';
-import { ProductGridComponent } from './product-grid/product-grid.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { SearchComponent } from './search/search.component';
-import { SortComponent } from './sort/sort.component';
-import { FilterComponent } from './filter/filter.component';
-import { CartTableComponent } from './cart-table/cart-table.component';
-import { CounterComponent } from './counter/counter.component';
-import { FavoritesGridComponent } from './favorites-grid/favorites-grid.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {CartComponent} from './pages/cart/cart.component';
+import {CartTableComponent} from './components/cart-table/cart-table.component';
+import {CounterComponent} from './components/counter/counter.component';
+import {FavoritesComponent} from './pages/favorites/favorites.component';
+import {FilterComponent} from './components/filter/filter.component';
+import {HeaderComponent} from './components/header/header.component';
+import {HomeComponent} from './pages/home/home.component';
+import {ProductCardComponent} from './components/product-card/product-card.component';
+import {ProductsGridComponent} from './components/products-grid/products-grid.component';
+import {SearchComponent} from './components/search/search.component';
+import {ShopComponent} from './pages/shop/shop.component';
+import {SidebarComponent} from './components/sidebar/sidebar.component';
+import {SortComponent} from './components/sort/sort.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    ShopComponent,
-    FavoritesComponent,
     CartComponent,
-    ProductsComponent,
-    ProductGridComponent,
-    SidebarComponent,
-    SearchComponent,
-    SortComponent,
-    FilterComponent,
     CartTableComponent,
     CounterComponent,
-    FavoritesGridComponent
+    FavoritesComponent,
+    FilterComponent,
+    HeaderComponent,
+    HomeComponent,
+    ProductCardComponent,
+    ProductsGridComponent,
+    SearchComponent,
+    ShopComponent,
+    SidebarComponent,
+    SortComponent
   ],
   imports: [
     BrowserModule,
@@ -43,4 +41,5 @@ import { FavoritesGridComponent } from './favorites-grid/favorites-grid.componen
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

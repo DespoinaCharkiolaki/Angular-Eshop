@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/">Angular App</a>
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink='/'>Home</a>
+      <a class="nav-item nav-link" routerLink='/shop'>Shop</a>
+      <a class="nav-item nav-link" routerLink='/favorites'>Favorites {{favorites != 0 ? '('+favorites+')' : ''}}</a>
+      <a class="nav-item nav-link" routerLink='/cart'>Cart {{cart != 0 ? '('+cart+')' : ''}}</a>
+    </div>
+  </div>
+</nav>

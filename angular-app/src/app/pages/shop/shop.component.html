@@ -1,0 +1,12 @@
+<div class="row mt-5">
+  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 m-auto">
+    <div class="row mt-5">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <app-sidebar (onSearch)="search($event)"></app-sidebar>
+      </div>
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <app-products-grid [products]="filteredProducts"></app-products-grid>
+      </div>
+    </div>
+  </div>
+</div>

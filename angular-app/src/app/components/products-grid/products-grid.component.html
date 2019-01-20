@@ -5,7 +5,7 @@
             <app-product-card [product]="product" (updateFavorites)="favorite($event)" (updateCart)="cart($event)"></app-product-card>
         </div>
     </div>
-    <div *ngIf="!this.products.length>0" class="row">
+    <div *ngIf="this.products.length==0" class="row">
         <div class="col-12">
             <div class="alert alert-danger mt-3" role="alert">No results yet.</div>
         </div>

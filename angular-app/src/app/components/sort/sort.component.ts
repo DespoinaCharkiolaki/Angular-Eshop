@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-sort',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortComponent implements OnInit {
 
-  constructor() { }
+  sortType: string = 'Ascending';
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  onSort() {
+  }
 }

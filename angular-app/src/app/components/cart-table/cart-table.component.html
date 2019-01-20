@@ -33,7 +33,7 @@
         </tr>
     </tbody>
 </table>
-<div *ngIf="!this.products.length>0" 
+<div *ngIf="this.products.length==0"
     class="text-center">
     <div class="alert alert-danger" role="alert">Your cart is currently empty.</div>
     <a routerLink='/shop'>Return to shop</a>

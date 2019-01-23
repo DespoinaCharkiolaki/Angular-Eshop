@@ -24,4 +24,23 @@ export class ShopComponent implements OnInit {
     this.filteredProducts = this.products.filter(p => p.name.includes(term));
   }
 
+  sort(sortType: string) {
+    console.log(sortType);
+    let sortedProducts: Product[] = this.filteredProducts.sort((a, b) => this.sortByPrice(a, b));
+    console.log(this.filteredProducts);
+    this.filteredProducts = (sortType == 'Ascending') ? sortedProducts : sortedProducts.reverse();
+    console.log(this.filteredProducts);
+  }
+
+  //SORT BY PRICE
+  private sortByPrice(a: Product, b: Product): number {
+    if (a.price < b.price) {
+      return -1;
+    }
+    if (a.price > b.price) {
+      return 1;
+    }
+    return 0;
+  }
+
 }

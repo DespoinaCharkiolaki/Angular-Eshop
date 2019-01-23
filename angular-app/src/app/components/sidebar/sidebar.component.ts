@@ -8,6 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   @Output() onSearch = new EventEmitter<string>();
+  @Output() onSort = new EventEmitter<string>();
 
   constructor() { }
 
@@ -16,6 +17,10 @@ export class SidebarComponent implements OnInit {
 
   search(term: string) {
     this.onSearch.emit(term);
+  }
+
+  sort(sortType: string) {
+    this.onSort.emit(sortType);
   }
 
 }

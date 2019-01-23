@@ -1,4 +1,4 @@
-<table *ngIf="this.products.length>0"
+<table *ngIf="this.products.length > 0"
         class="table table-striped table-bordered table-hover">
     <thead>
         <tr>
@@ -33,7 +33,7 @@
         </tr>
     </tbody>
 </table>
-<div *ngIf="!this.products.length>0" 
+<div *ngIf="!this.products.length > 0" 
     class="text-center">
     <div class="alert alert-danger" role="alert">Your cart is currently empty.</div>
     <a routerLink='/shop'>Return to shop</a>

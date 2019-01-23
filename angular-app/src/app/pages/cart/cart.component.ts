@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {Product} from "../../domain/product";
 import {ProductService} from "../../services/product.service";
 
@@ -9,7 +9,7 @@ import {ProductService} from "../../services/product.service";
 })
 export class CartComponent implements OnInit {
 
-  products: Product[];
+products: Product[];
 
   constructor(private productService: ProductService) {
   }

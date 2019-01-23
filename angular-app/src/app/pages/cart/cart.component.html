@@ -3,6 +3,6 @@
     <h2 class="m-3">
       Cart
     </h2>
-    <app-cart-table (updateCart)="remove($event)"></app-cart-table>
+    <app-cart-table [products]="products" (updateCart)="remove()"></app-cart-table>
   </div>
 </div>

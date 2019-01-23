@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-sort',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortComponent implements OnInit {
 
-  constructor() { }
+  @Output() onSort = new EventEmitter<string>();
+  sortType: string;
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    this.sortType = 'Ascending';
+  }
+
+  sort() {
+    this.onSort.emit(this.sortType);
+    this.sortType = (this.sortType != 'Ascending') ? 'Ascending' : 'Descending';
+  }
 }
